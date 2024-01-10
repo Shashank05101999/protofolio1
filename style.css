@@ -1,0 +1,111 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav {
+  padding-left: 6%;
+  gap: 3rem;
+  display: flex;
+  /* position: fixed; */
+}
+.nav-items li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 20%;
+  margin-top: 4rem;
+}
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.nav-items a:hover {
+  transition: all 0.3s ease;
+  background-color: yellow;
+  border: none;
+}
+
+/* sidebar-section */
+
+.sidebar-line {
+  height: 100rem;
+  border-left: 6px solid rgb(5, 6, 5);
+  margin-left: 2rem;
+}
+
+.img-section {
+  /* background-image: url(shahsank11.jpg);
+  border-radius: 50%;
+  display: inline;
+  margin-left: 3%;
+  border: 4px solid black;
+  width: 16rem;
+  height: 15rem;
+  margin-top: 10%;
+  box-sizing: border-box; */
+}
+.image {
+  background-image: url(./Shashank.jpeg);
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-position: -77px -64px;
+  width: 20vw;
+  margin-top: 10%;
+  animation: zoomIn 2s ease-in-out infinite alternate;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.main_title {
+  margin-top: 15%;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.para-content {
+  color: rgb(230, 63, 63);
+  padding-left: 30%;
+}
+
+.typewriter pre {
+  color: black;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
