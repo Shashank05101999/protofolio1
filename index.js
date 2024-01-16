@@ -7,4 +7,3 @@ icon.onclick = function () {
     icon.src = "m3.png";
   }
 };
-// hello  what is going on
